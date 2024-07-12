@@ -8,7 +8,7 @@ function UrlList  ()  {
   useEffect(() => {
     const fetchUrls = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/urls/urllist');
+        const response = await axios.get('https://url-shortener-be-t0qa.onrender.com/urls/urllist');
         // console.log(response.data); // Log the response data to see its structure
         setUrls(response.data.urls || []); // Safeguard against undefined response.data.urls
       } catch (error) {

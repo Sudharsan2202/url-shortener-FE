@@ -9,8 +9,8 @@ function CreateShortUrl  ()  {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/urls/shorten', { originalUrl: url } );
-      setShortUrl(`http://localhost:3000/urls/${response.data.shortUrl}`);
+      const response = await axios.post('https://url-shortener-be-t0qa.onrender.com/urls/shorten', { originalUrl: url } );
+      setShortUrl(`https://url-shortener-be-t0qa.onrender.com/urls/${response.data.shortUrl}`);
       setError('');
     } catch (err) {
       setError(err.response?.data?.message || 'An error occurred');

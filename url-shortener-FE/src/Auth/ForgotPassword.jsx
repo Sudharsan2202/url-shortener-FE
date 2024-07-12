@@ -10,7 +10,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/auth/forgot-password', formData);
+      await axios.post('https://url-shortener-be-t0qa.onrender.com/auth/forgot-password', formData);
       setMessage('Password reset link sent to your email.');
     } catch (err) {
       setError(err.response.data.message);

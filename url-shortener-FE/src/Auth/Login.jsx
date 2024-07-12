@@ -13,7 +13,7 @@ const navigate = useNavigate();
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    const response = await axios.post('http://localhost:3000/auth/login', formData);
+    const response = await axios.post('https://url-shortener-be-t0qa.onrender.com/auth/login', formData);
     localStorage.setItem('token', response.data.token);
     const { firstName, lastName } = response.data;
     setMessage('Login successful');
