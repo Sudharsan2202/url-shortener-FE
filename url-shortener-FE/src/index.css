@@ -1,6 +1,9 @@
 
 /* Body Style */
-
+body
+{
+    background-color:rgb(96, 111, 0);
+}
 /* Form Style */
 .login-form,
 .forgot-password-form,
@@ -11,8 +14,6 @@
 .url-list,
 .url-stats
 {
-    background-color:rgb(96, 111, 0);
-
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgb(81, 81, 81);

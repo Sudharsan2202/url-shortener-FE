@@ -11,15 +11,13 @@ import Dashboard from './components/DashBoard';
 import ActivateAccount from './Auth/ActivateAccount';
 import UrlStats from './components/UrlStats';
 import UrlList from './components/UrlList';
-import Home from './Auth/Home';
 
 function App() {
   return (
     <Router>
       <div className="container mt-5">
         <Routes>
-        <Route path="/" element={<Home />} />
-          
+          <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/activate/:token" element={<ActivateAccount />} />
